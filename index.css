@@ -736,6 +736,16 @@ svg {
   margin: 1rem auto;
   margin-bottom: 3rem;
 }
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background-color: #250821;   /* prevent color change */
+  outline: none;             /* optional: remove blue outline */
+}
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #250821 inset !important;
+    box-shadow: 0 0 0px 1000px #250821 inset !important;
+    -webkit-text-fill-color: white !important;
+  }
 .contant form input,
 .contant form textarea {
   width: 100%;
